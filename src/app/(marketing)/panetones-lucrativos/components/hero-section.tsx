@@ -16,13 +16,16 @@ export function HeroSection({ onCtaClick }: HeroSectionProps) {
         {/* Coluna de Texto */}
         <div className="text-left">
             <h1 className="font-headline text-5xl md:text-6xl font-black text-gray-900 leading-tight">
-                Transforme Panetones em Renda Extra Nesse Natal
+              Fature de R$ 150 a R$ 350 por dia
             </h1>
             <p className="mt-6 font-body text-xl md:text-2xl text-muted-foreground max-w-xl">
-                Mesmo começando do zero.
+              Vendendo Panetones Gourmet Irresistíveis (mesmo sem experiência e usando o forno da sua casa)
             </p>
-            <p className="mt-4 text-lg text-muted-foreground max-w-xl">
-                Aprenda a criar Panetones Gourmet com técnicas e dicas exclusivas e descubra como transformar o Natal na sua época mais lucrativa do ano.
+            <p className="mt-4 text-lg font-bold text-primary">
+              🎁 Por apenas R$ 2,90
+            </p>
+             <p className="mt-1 text-md text-muted-foreground">
+              Acesso vitalício imediato
             </p>
             <div className="mt-10">
                 <Button
@@ -30,7 +33,7 @@ export function HeroSection({ onCtaClick }: HeroSectionProps) {
                 className="text-lg md:text-xl font-bold h-16 px-10 bg-accent text-accent-foreground hover:bg-accent/90 transform hover:scale-105 transition-transform duration-300 shadow-lg"
                 size="lg"
                 >
-                QUERO FATURAR
+                👇 SIM, QUERO FATURAR COM PANETONES! 👇
                 </Button>
             </div>
         </div>
