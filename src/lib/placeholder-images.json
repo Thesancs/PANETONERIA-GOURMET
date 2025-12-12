@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "panettone-hero",
+      "description": "A delicious looking gourmet panettone on a festive table setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1669385185295-a96157e05a34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFuZXR0b25lJTIwY2hyaXN0bWFzfGVufDB8fHx8MTc2NTUwNTI0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "panettone christmas"
+    }
+  ]
 }
