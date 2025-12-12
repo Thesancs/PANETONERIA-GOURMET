@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Users, CookingPot, Trophy } from "lucide-react";
 import Image from "next/image";
 
 type HeroSectionProps = {
@@ -8,8 +6,6 @@ type HeroSectionProps = {
 };
 
 export function HeroSection({ onCtaClick }: HeroSectionProps) {
-  const heroImage = PlaceHolderImages.find((img) => img.id === "panettone-hero");
-
   return (
     <section className="bg-background text-foreground py-16 md:py-24">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
@@ -40,17 +36,15 @@ export function HeroSection({ onCtaClick }: HeroSectionProps) {
         
         {/* Coluna da Imagem */}
         <div className="flex items-center justify-center">
-          {heroImage && (
             <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
+              src="/arvoredenatal.png"
+              alt="Árvore de Natal com presentes"
               width={600}
               height={600}
               priority
               className="rounded-lg shadow-2xl object-cover aspect-square"
-              data-ai-hint={heroImage.imageHint}
+              data-ai-hint="christmas tree presents"
             />
-          )}
         </div>
       </div>
     </section>
