@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 import { HeroSection } from "./components/hero-section";
 import { BenefitsSection } from "./components/benefits-section";
 import { CourseIntroSection } from "./components/course-intro-section";
@@ -14,6 +15,7 @@ import { TestimonialsSection } from "./components/testimonials-section";
 import { UrgencySection } from "./components/urgency-section";
 import { FinalCTASection } from "./components/final-cta-section";
 import { useToast } from "@/hooks/use-toast";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 // --- Configurable Data ---
 const CONFIG = {
@@ -58,6 +60,8 @@ export default function PanetonesLucrativosPage() {
   
   const plansRef = useRef<HTMLDivElement>(null);
 
+  const garlandImage = PlaceHolderImages.find(img => img.id === 'christmas-garland-divider');
+
   const handleScrollToPlans = () => {
     plansRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
@@ -90,6 +94,18 @@ export default function PanetonesLucrativosPage() {
   return (
     <div className="bg-background text-foreground font-body">
       <HeroSection onCtaClick={handleScrollToPlans} />
+      {garlandImage && (
+        <div className="w-full">
+          <Image
+            src={garlandImage.imageUrl}
+            alt={garlandImage.description}
+            width={1920}
+            height={160}
+            className="w-full object-cover"
+            data-ai-hint={garlandImage.imageHint}
+          />
+        </div>
+      )}
       <main>
         <BenefitsSection />
         <CourseIntroSection />
