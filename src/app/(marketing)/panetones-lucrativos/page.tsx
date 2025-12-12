@@ -89,7 +89,7 @@ export default function PanetonesLucrativosPage() {
 
   return (
     <div className="bg-background text-foreground font-body">
-      <HeroSection onCtaClick={handleScrollToPlans} />
+      <HeroSection onCtaClick={() => handleCheckout('basic', 'hero')} />
       <main>
         <BenefitsSection />
         <CourseIntroSection />
